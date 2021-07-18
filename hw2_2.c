@@ -26,7 +26,7 @@ int main ()
 		rainy++;
 		break;
 	}
-	for (int i = 2; i <= 10000; i++) { //second and later days
+	for (int i = 2; i <= 1000000; i++) { //second and later days
 		next_day = (rand() % 10 + 1); //let the base be 1/10
 		switch (flag) { //and follow the transition table
 		case 1:
@@ -74,8 +74,8 @@ int main ()
 	}
 	printf("\n########## HW2-c ##########\n\n");
 	printf("The staionary distribution :\n");
-	printf("sunny : %lf%%\n", (double)sunny / 100);
-	printf("cloudy : %lf%%\n", (double)cloudy / 100);
-	printf("rainy : %lf%%\n", (double)rainy / 100);
+	printf("sunny : %lf %%\n", (double)sunny / 10000);
+	printf("cloudy : %lf %%\n", (double)cloudy / 10000);
+	printf("rainy : %lf %%\n", (double)rainy / 10000);
 	return 0;
 }
